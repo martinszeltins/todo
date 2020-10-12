@@ -4,19 +4,8 @@
         <!-- Add new todo -->
         <add-todo />
 
-
         <!-- Loading -->
-        <div
-            v-if="store.todos.isLoading"
-            class="loading">
-
-            <v-progress-linear
-                indeterminate
-                height="10"
-                color="cyan">
-            </v-progress-linear>
-        </div>
-
+        <loading />
 
         <!-- Todos -->
         <todo
@@ -24,18 +13,21 @@
             :key="todo.id"
             :todo="todo"
         />
+
     </div>
 </template>
 
 <script>
     import Todo from './Todo.vue'
     import AddTodo from './AddTodo.vue'
+    import Loading from './Loading.vue'
 
     export default {
         components:
         {
             'todo': Todo,
             'add-todo': AddTodo,
+            'loading': Loading,
         },
 
         data()
@@ -72,11 +64,6 @@
 <style scoped>
     .todos-container {
         margin: 50px 100px 0 100px;
-    }
-
-    .loading {
-        width: 80%;
-        margin: 50px auto;
     }
 
     @media screen and (max-width: 700px) {
