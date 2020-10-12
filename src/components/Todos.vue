@@ -78,4 +78,10 @@ export default {
         width: 80%;
         margin: 50px auto;
     }
+
+    @media screen and (max-width: 700px) {
+        .todos-container {
+            margin: 50px 20px 0 20px;
+        }
+    }
 </style>
