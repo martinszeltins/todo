@@ -1,5 +1,5 @@
 <template>
-    <div class="flex">
+    <div class="container">
         <v-text-field
             @keyup.enter="addTodo"
             v-model="newTodo"
@@ -26,7 +26,7 @@ export default {
             newTodo: '',
         }
     },
-    
+
     methods:
     {
         addTodo()
@@ -47,5 +47,23 @@ export default {
     .btn-add {
         height: 46px !important;
         margin-left: 20px;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    @media screen and (max-width: 700px) {
+        .container {
+            display: block;
+        }
+
+        .btn-add {
+            display: block;
+            width: 100%;
+            margin: 0;
+            margin-top: -13px;
+            margin-bottom: 27px;
+        }
     }
 </style>
