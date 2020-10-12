@@ -3,7 +3,7 @@ export default {
     
     state:
     {
-        theme: 'dark',
+        theme: 'light',
     },
 
     mutations:
