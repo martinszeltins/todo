@@ -18,7 +18,7 @@
             class="todo-description"
             :class="{ completed: todo.completed }">
             
-            <div v-show="!isEditing">
+            <div v-show="!isEditing" @dblclick="startEditing">
                 {{ todo.id }}. {{ todo.title }}
             </div>
 
@@ -26,6 +26,7 @@
                 <input
                     @input="onTodoEdit"
                     @keyup.enter="isEditing = false"
+                    @blur="isEditing = false"
                     type="text"
                     ref="editTodoInput"
                     class="edit-todo-input"

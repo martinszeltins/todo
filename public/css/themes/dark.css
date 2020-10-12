@@ -7,7 +7,7 @@
 }
 
 [data-theme="dark"] .theme--light.v-text-field--solo > .v-input__control > .v-input__slot {
-    background-color: #4e4e4e !important;
+    background-color: #4e4e4ead !important;
 }
 
 [data-theme="dark"] .theme--light.v-input input {
@@ -19,16 +19,16 @@
 }
 
 [data-theme="dark"] .btn-add.primary {
-    background-color: #5a5a5a !important;
-    border-color: #5a5a5a !important;
+    background-color: #5a5a5a9e !important;
+    border-color: #5a5a5a9e !important;
 }
 
 [data-theme="dark"] .btn-add .v-btn__content {
-    color: #d4d4d4;
+    color: #adadad;
 }
 
 [data-theme="dark"] .theme--light.v-sheet {
-    background-color: #4e4e4e;
+    background-color: #4c4c4ca6;
     border-color: #FFFFFF;
     color: rgb(187 187 187 / 87%);
 }
@@ -52,12 +52,12 @@
 }
 
 [data-theme="dark"] .delete-btn.primary {
-    background-color: #5a5a5a !important;
-    border-color: #5a5a5a !important;
+    background-color: #5a5a5a9e !important;
+    border-color: #5a5a5a9e !important;
 }
 
 [data-theme="dark"] .delete-btn .v-btn__content {
-    color: #d4d4d4;
+    color: #adadad;
 }
 
 [data-theme="dark"].v-application .cyan {
