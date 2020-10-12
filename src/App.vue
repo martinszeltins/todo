@@ -6,16 +6,16 @@
 </template>
 
 <script>
-import Toolbar from './components/Toolbar.vue'
-import Todos from './components/Todos.vue'
+    import Toolbar from './components/Toolbar.vue'
+    import Todos from './components/Todos.vue'
 
-export default {
-    components:
-    {
-        'toolbar': Toolbar,
-        'todos': Todos,
-    },
-}
+    export default {
+        components:
+        {
+            'toolbar': Toolbar,
+            'todos': Todos,
+        },
+    }
 </script>
 
 <style>

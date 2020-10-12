@@ -52,55 +52,55 @@
 </template>
 
 <script>
-export default {
-    props:
-    {
-        todo: {
-            type: Object,
-        },
-    },
-
-    data()
-    {
-        return {
-            isEditing: false,
-        }
-    },
-
-    methods:
-    {
-        onTodoEdit(event)
+    export default {
+        props:
         {
-            this.$store.dispatch('todos/updateTodo', {
-                id: this.todo.id,
-                title: event.target.value,
-            })
+            todo: {
+                type: Object,
+            },
         },
 
-        async startEditing()
+        data()
         {
-            this.isEditing = !this.isEditing
-
-            await this.$nextTick()
-
-            this.$refs.editTodoInput.focus()
-            this.$refs.editTodoInput.select()
+            return {
+                isEditing: false,
+            }
         },
 
-        updateTodo(value, todo)
+        methods:
         {
-            this.$store.dispatch('todos/updateCompleted', {
-                id: todo.id,
-                completed: !!value,
-            })
-        },
+            onTodoEdit(event)
+            {
+                this.$store.dispatch('todos/updateTodo', {
+                    id: this.todo.id,
+                    title: event.target.value,
+                })
+            },
 
-        deleteTodo(todo)
-        {
-            this.$store.dispatch('todos/delete', todo)
+            async startEditing()
+            {
+                this.isEditing = !this.isEditing
+
+                await this.$nextTick()
+
+                this.$refs.editTodoInput.focus()
+                this.$refs.editTodoInput.select()
+            },
+
+            updateTodo(value, todo)
+            {
+                this.$store.dispatch('todos/updateCompleted', {
+                    id: todo.id,
+                    completed: !!value,
+                })
+            },
+
+            deleteTodo(todo)
+            {
+                this.$store.dispatch('todos/delete', todo)
+            },
         },
-    },
-}
+    }
 </script>
 
 <style scoped>

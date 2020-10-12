@@ -19,28 +19,28 @@
 </template>
 
 <script>
-export default {
-    data()
-    {
-        return {
-            newTodo: '',
-        }
-    },
-
-    methods:
-    {
-        addTodo()
+    export default {
+        data()
         {
-            this.$store.dispatch('todos/add', this.newTodo)
-            this.clear()
+            return {
+                newTodo: '',
+            }
         },
 
-        clear()
+        methods:
         {
-            this.newTodo = ''
+            addTodo()
+            {
+                this.$store.dispatch('todos/add', this.newTodo)
+                this.clear()
+            },
+
+            clear()
+            {
+                this.newTodo = ''
+            },
         },
-    },
-}
+    }
 </script>
 
 <style scoped>

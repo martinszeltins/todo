@@ -28,45 +28,45 @@
 </template>
 
 <script>
-import Todo from './Todo.vue'
-import AddTodo from './AddTodo.vue'
+    import Todo from './Todo.vue'
+    import AddTodo from './AddTodo.vue'
 
-export default {
-    components:
-    {
-        'todo': Todo,
-        'add-todo': AddTodo,
-    },
-
-    data()
-    {
-        return {
-            store: this.$store.state,
-            newTodo: '',
-        }
-    },
-
-    methods:
-    {
-        updateTodo(value, todo)
+    export default {
+        components:
         {
-            this.$store.dispatch('todos/updateCompleted', {
-                id: todo.id,
-                completed: !!value,
-            })
+            'todo': Todo,
+            'add-todo': AddTodo,
         },
 
-        deleteTodo(todo)
+        data()
         {
-            this.$store.dispatch('todos/delete', todo)
+            return {
+                store: this.$store.state,
+                newTodo: '',
+            }
         },
-    },
 
-    created()
-    {
-        this.$store.dispatch('todos/fetch')
-    },
-}
+        methods:
+        {
+            updateTodo(value, todo)
+            {
+                this.$store.dispatch('todos/updateCompleted', {
+                    id: todo.id,
+                    completed: !!value,
+                })
+            },
+
+            deleteTodo(todo)
+            {
+                this.$store.dispatch('todos/delete', todo)
+            },
+        },
+
+        created()
+        {
+            this.$store.dispatch('todos/fetch')
+        },
+    }
 </script>
 
 <style scoped>
