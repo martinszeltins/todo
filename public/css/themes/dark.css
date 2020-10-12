@@ -15,7 +15,7 @@
 }
 
 [data-theme="dark"] .theme--light.v-input input::placeholder {
-    color: rgb(183 183 183 / 87%);
+    color: rgb(129 129 129 / 87%);
 }
 
 [data-theme="dark"] .btn-add.primary {
@@ -45,4 +45,21 @@
 [data-theme="dark"] .edit-todo-input {
     background: #626262 !important;
     color: #bcbcbc !important;
+}
+
+[data-theme="dark"] .v-toolbar__title {
+    color: #d6d6d6;
+}
+
+[data-theme="dark"] .delete-btn.primary {
+    background-color: #5a5a5a !important;
+    border-color: #5a5a5a !important;
+}
+
+[data-theme="dark"] .delete-btn .v-btn__content {
+    color: #d4d4d4;
+}
+
+[data-theme="dark"].v-application .cyan {
+    background-color: #4e4e4e !important;
 }

@@ -6,7 +6,7 @@
         <!-- Check -->
         <div class="check-todo">
             <v-checkbox
-                @change="updateTodo($event, todo)"
+                @change="updateCompleted($event, todo)"
                 dense
                 :input-value="todo.completed">
             </v-checkbox>
@@ -90,7 +90,7 @@
                 this.$refs.editTodoInput.select()
             },
 
-            updateTodo(value, todo)
+            updateCompleted(value, todo)
             {
                 this.$store.dispatch('todos/updateCompleted', {
                     id: todo.id,
