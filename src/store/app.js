@@ -4,6 +4,7 @@ export default {
     state:
     {
         theme: 'light',
+        language: 'en',
     },
 
     mutations:
@@ -12,6 +13,11 @@ export default {
         {
             state.theme = state.theme == 'light' ? 'dark' : 'light'
         },
+
+        changeLanguage(state)
+        {
+            state.language = (state.language == 'lv') ? 'en' : 'lv'
+        },
     },
 
     actions:
@@ -19,6 +25,19 @@ export default {
         toggleTheme({ commit })
         {
             commit('toggleTheme')
-        }
+        },
+
+        changeLanguage({ commit })
+        {
+            commit('changeLanguage')
+        },
+    },
+
+    getters:
+    {
+        otherLanguage(state)
+        {
+            return (state.language == 'lv') ? 'en' : 'lv'
+        },
     },
 }

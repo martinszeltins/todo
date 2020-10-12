@@ -6,7 +6,7 @@
             solo
             flat
             hide-details
-            placeholder="What needs to be done?">
+            :placeholder="lang('What needs to be done?')">
         </v-text-field>
 
         <v-btn
@@ -14,7 +14,7 @@
             depressed
             color="primary"
             class="btn-add">
-            Add todo
+            {{ lang('Add todo') }}
         </v-btn>
     </div>
 </template>

@@ -5,7 +5,7 @@
         color="primary"
         class="delete-btn">
         
-        Delete selected ({{ selectedCount }})
+        {{ lang('Delete selected') }} ({{ selectedCount }})
     </v-btn>
 </template>
 

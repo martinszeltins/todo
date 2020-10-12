@@ -3,9 +3,14 @@
         <v-toolbar
             dark
             src="/img/vbanner.jpg">
+
             <v-toolbar-title>Todo</v-toolbar-title>
 
             <v-spacer></v-spacer>
+
+            <v-btn icon @click="changeLanguage">
+                {{ otherLanguage }}
+            </v-btn>
 
             <v-btn
                 @click="toggleTheme"
@@ -31,9 +36,22 @@
 
         methods:
         {
+            changeLanguage()
+            {
+                this.$store.dispatch('app/changeLanguage')
+            },
+
             toggleTheme()
             {
                 this.$store.dispatch('app/toggleTheme')
+            },
+        },
+
+        computed:
+        {
+            otherLanguage()
+            {
+                return this.$store.getters['app/otherLanguage']
             },
         },
     }
