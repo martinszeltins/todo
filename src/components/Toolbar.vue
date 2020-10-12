@@ -2,7 +2,7 @@
     <v-card class="toolbar">
         <v-toolbar
             dark
-            src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
+            src="/img/vbanner.jpg">
             <v-toolbar-title>Todo</v-toolbar-title>
 
             <v-spacer></v-spacer>
