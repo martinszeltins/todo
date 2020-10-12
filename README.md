@@ -28,8 +28,4 @@ $ npm run serve
 
 [MIT](http://opensource.org/licenses/MIT)
 
-<<<<<<< HEAD
 Copyright (c) martinsz.lv
-=======
-Copyright (c) martinsz.lv
->>>>>>> d65436e73b19ef1edb755ee8a1121c9b575e8271
