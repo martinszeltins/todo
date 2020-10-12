@@ -2,7 +2,9 @@
     <div class="todos-container">
         
         <!-- Loading -->
-        <loading />
+        <div v-if="store.todos.isLoading" class="loading">
+            <loading />
+        </div>
 
         <!-- Todos -->
         <todo
@@ -67,5 +69,10 @@
         .todos-container {
             margin: 50px 20px 0 20px;
         }
+    }
+
+    .loading {
+        width: 80%;
+        margin: 50px auto;
     }
 </style>

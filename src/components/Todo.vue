@@ -12,6 +12,7 @@
             </v-checkbox>
         </div>
 
+
         <!-- Title -->
         <div
             class="todo-description"
@@ -33,6 +34,7 @@
             </div>
         </div>
 
+
         <!-- Edit -->
         <div>
             <span
@@ -41,6 +43,7 @@
                 create
             </span>
         </div>
+
 
         <!-- Delete -->
         <div class="todo-delete">

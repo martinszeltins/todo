@@ -1,3 +1,7 @@
 /**
-    TODO:   Dark mode
+    TODO:   Add dark mode
+
+    FIX:    Components should know nothing about the environment that they are
+            put inside. Remove margins. Removes the need to change the
+            component itself.
 **/

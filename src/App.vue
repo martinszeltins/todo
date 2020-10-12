@@ -2,7 +2,9 @@
     <v-app class="todo-app">
         <toolbar />
 
-        <add-todo />
+        <div class="add-todo">
+            <add-todo />
+        </div>
 
         <todos />
     </v-app>
@@ -30,5 +32,15 @@
 
     .todo-app {
         background: #f1f1f1 !important;
+    }
+
+    .add-todo {
+        margin: 30px 50px 15px 50px;
+    }
+
+    @media screen and (max-width: 700px) {
+        .add-todo {
+            margin: 30px 20px 0px 20px;
+        }
     }
 </style>

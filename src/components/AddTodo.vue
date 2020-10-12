@@ -5,6 +5,7 @@
             v-model="newTodo"
             solo
             flat
+            hide-details
             placeholder="What needs to be done?">
         </v-text-field>
 
@@ -51,21 +52,18 @@
 
     .add-todo {
         display: flex;
-        margin: 50px 100px 0 100px;
     }
 
     @media screen and (max-width: 700px) {
         .add-todo {
             display: block;
-            margin: 30px 20px -30px 20px;
         }
 
         .btn-add {
             display: block;
             width: 100%;
-            margin: 0;
-            margin-top: -13px;
-            margin-bottom: 27px;
+            margin-top: 20px;
+            margin-left: 0;
         }
     }
 </style>
