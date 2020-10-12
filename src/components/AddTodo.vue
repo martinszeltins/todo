@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="add-todo">
         <v-text-field
             @keyup.enter="addTodo"
             v-model="newTodo"
@@ -49,13 +49,15 @@
         margin-left: 20px;
     }
 
-    .container {
+    .add-todo {
         display: flex;
+        margin: 50px 100px 0 100px;
     }
 
     @media screen and (max-width: 700px) {
-        .container {
+        .add-todo {
             display: block;
+            margin: 30px 20px -30px 20px;
         }
 
         .btn-add {

@@ -1,9 +1,6 @@
 <template>
     <div class="todos-container">
         
-        <!-- Add new todo -->
-        <add-todo />
-
         <!-- Loading -->
         <loading />
 
@@ -63,7 +60,7 @@
 
 <style scoped>
     .todos-container {
-        margin: 50px 100px 0 100px;
+        margin: 0px 100px 0 100px;
     }
 
     @media screen and (max-width: 700px) {
