@@ -1,7 +1,24 @@
 export default {
     namespaced: true,
-    state: {},
-    mutations: {},
-    actions: {},
-    getters: {},
+    
+    state:
+    {
+        theme: 'light',
+    },
+
+    mutations:
+    {
+        toggleTheme(state)
+        {
+            state.theme = state.theme == 'light' ? 'dark' : 'light'
+        },
+    },
+
+    actions:
+    {
+        toggleTheme({ commit })
+        {
+            commit('toggleTheme')
+        }
+    },
 }

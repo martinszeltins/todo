@@ -111,6 +111,8 @@
         padding: 20px 20px;
         margin-bottom: 10px;
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .todo-description {
@@ -120,7 +122,8 @@
 
     .check-todo {
         position: absolute;
-        top: -1px;
+        top: 2px;
+        left: 20px;
     }
 
     .completed {

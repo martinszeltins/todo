@@ -1,0 +1,48 @@
+[data-theme="dark"] .toolbar.v-card.v-sheet.theme--light {
+    filter: grayscale(.9);
+}
+
+[data-theme="dark"].todo-app {
+    background-color: #313131 !important;
+}
+
+[data-theme="dark"] .theme--light.v-text-field--solo > .v-input__control > .v-input__slot {
+    background-color: #4e4e4e !important;
+}
+
+[data-theme="dark"] .theme--light.v-input input {
+    color: rgb(183 183 183 / 87%);
+}
+
+[data-theme="dark"] .theme--light.v-input input::placeholder {
+    color: rgb(183 183 183 / 87%);
+}
+
+[data-theme="dark"] .btn-add.primary {
+    background-color: #5a5a5a !important;
+    border-color: #5a5a5a !important;
+}
+
+[data-theme="dark"] .btn-add .v-btn__content {
+    color: #d4d4d4;
+}
+
+[data-theme="dark"] .theme--light.v-sheet {
+    background-color: #4e4e4e;
+    border-color: #FFFFFF;
+    color: rgb(187 187 187 / 87%);
+}
+
+[data-theme="dark"] .theme--light.v-icon {
+    color: rgb(211 211 211 / 54%);
+}
+
+[data-theme="dark"] .check-todo .primary--text {
+    color: #8b8b8b !important;
+    caret-color: #979797 !important;
+}
+
+[data-theme="dark"] .edit-todo-input {
+    background: #626262 !important;
+    color: #bcbcbc !important;
+}

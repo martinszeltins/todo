@@ -33,24 +33,7 @@
         {
             return {
                 store: this.$store.state,
-                newTodo: '',
             }
-        },
-
-        methods:
-        {
-            updateTodo(value, todo)
-            {
-                this.$store.dispatch('todos/updateCompleted', {
-                    id: todo.id,
-                    completed: !!value,
-                })
-            },
-
-            deleteTodo(todo)
-            {
-                this.$store.dispatch('todos/delete', todo)
-            },
         },
 
         created()

@@ -1,5 +1,5 @@
 <template>
-    <v-app class="todo-app">
+    <v-app :data-theme="store.app.theme" class="todo-app">
         <toolbar />
 
         <div class="add-todo">
@@ -21,6 +21,13 @@
             'toolbar': Toolbar,
             'todos': Todos,
             'add-todo': AddTodo,
+        },
+
+        data()
+        {
+            return {
+                store: this.$store.state,
+            }
         },
     }
 </script>
