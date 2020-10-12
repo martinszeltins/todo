@@ -14,6 +14,9 @@
 
 This todo app is a MIT licensed project that is developed using Vue + Vuetify + Vuex! 🎉
 
+### Demo
+https://todo.martinsz.lv/
+
 ### Build instructions
 
 ````
