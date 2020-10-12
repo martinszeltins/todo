@@ -52,6 +52,10 @@
 </script>
 
 <style>
+    html {
+        overflow-y: auto;
+    }
+    
     .flex {
         display: flex;
     }

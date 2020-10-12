@@ -1,9 +1,9 @@
 [data-theme="dark"] .toolbar.v-card.v-sheet.theme--light {
-    filter: grayscale(.9);
+    filter: grayscale(.95);
 }
 
 [data-theme="dark"].todo-app {
-    background-color: #313131 !important;
+    background-image: url(../../img/darkbg.jpg) !important;
 }
 
 [data-theme="dark"] .theme--light.v-text-field--solo > .v-input__control > .v-input__slot {
