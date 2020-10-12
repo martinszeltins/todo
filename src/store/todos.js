@@ -41,6 +41,15 @@ export default {
 
             state.todos[index].completed = todo.completed
         },
+
+        updateTodo(state, todo)
+        {
+            const index = state.todos.findIndex(item => {
+                return item.id === todo.id
+            })
+
+            state.todos[index].title = todo.title
+        },
     },
 
     actions:
@@ -78,6 +87,11 @@ export default {
         updateCompleted({ commit }, todo)
         {
             commit('updateCompleted', todo)
+        },
+
+        updateTodo({ commit }, todo)
+        {
+            commit('updateTodo', todo)
         },
     },
 }
